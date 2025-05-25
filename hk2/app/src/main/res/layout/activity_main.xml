@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="選擇背景顏色："
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/colorRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/redRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紅色" />
+
+        <RadioButton
+            android:id="@+id/greenRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="綠色" />
+
+        <RadioButton
+            android:id="@+id/blueRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="藍色" />
+
+        <RadioButton
+            android:id="@+id/yellowRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黃色" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自助餐選菜 (選3樣50元，4樣60元)："
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/dish1CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜色一" />
+
+    <CheckBox
+        android:id="@+id/dish2CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜色二" />
+
+    <CheckBox
+        android:id="@+id/dish3CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜色三" />
+
+    <CheckBox
+        android:id="@+id/dish4CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜色四" />
+
+    <CheckBox
+        android:id="@+id/dish5CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜色五" />
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結帳"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
+<!--    20250522作業-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20250522作業："
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/path_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="目前路徑:" />
+
+    <Button
+        android:id="@+id/btn_to_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳到 Activity 2" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="結束 Activity" />
+
+</LinearLayout>
